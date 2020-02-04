@@ -109,10 +109,8 @@ def checkout(cart, coupons)
   apply_clearance(total_cart)
   binding.pry
    while i < total_cart.length do
-     total += total_cart[i]
-
+     total += total_cart[i][:price] * total_cart[i][:count]
      i += 1
-
    end
 
 
