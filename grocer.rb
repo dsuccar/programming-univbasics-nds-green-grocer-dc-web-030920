@@ -86,7 +86,15 @@ end
 
 
 def apply_clearance(cart)
-  binding.pry
+  i = 0
+  while i < cart.length
+if cart[i][:clearance] == true
+  cart[i][:price] * .8
+
+end
+
+    i += 1
+  end
   # Consult README for inputs and outputs
   #
   # REMEMBER: This method **should** update cart
