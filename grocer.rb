@@ -62,11 +62,11 @@ while i<coupons.length
       cart_item_with_coupon[:count] += coupons[i][:num ]
       cart_item -= coupons[i][:num]
     else
-      cart_item_with_coupon = 
-        {:item=>couponed_item_name,
+      cart_item_with_coupon =
+      {   :item=>couponed_item_name,
           :price=>coupons[i][:cost] / coupons[i][:num],
-          :clearance=>cart_item[:clearance],
-          :count => coupons[i][:num]
+          :count => coupons[i][:num],
+          :clearance=>cart_item[:clearance]
       }
       cart << cart_item_with_coupon
       cart_item[:count] -= coupons[i][:num]
