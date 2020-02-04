@@ -102,7 +102,9 @@ i += 1
 
 
 def checkout(cart, coupons)
-   
+   consolidate_cart(cart)
+   apply_coupons(cart, coupons)
+   apply_clearance(cart)
 
 cart
 binding.pry
@@ -115,4 +117,3 @@ binding.pry
   #
   # BEFORE it begins the work of calculating the total (or else you might have
   # some irritated customers
-end
