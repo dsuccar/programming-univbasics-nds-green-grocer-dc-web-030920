@@ -102,6 +102,12 @@ i += 1
 
 
 def checkout(cart, coupons)
+   consolidate_cart(cart)
+   apply_coupons(cart, coupons)
+   apply_clearance(cart)
+
+   cart
+
   # Consult README for inputs and outputs
   #
   # This method should call
