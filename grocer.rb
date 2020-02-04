@@ -107,7 +107,8 @@ def checkout(cart, coupons)
    apply_clearance(cart)
 
 cart
-binding.pry
+
+end
   # Consult README for inputs and outputs
   #
   # This method should call
