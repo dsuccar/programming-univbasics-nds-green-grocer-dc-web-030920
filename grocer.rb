@@ -116,7 +116,7 @@ def checkout(cart, coupons)
    if total >= 100
       total *= 9/10.to_f
     end
-total.to_i
+total.to_f
 end
   # Consult README for inputs and outputs
   #
