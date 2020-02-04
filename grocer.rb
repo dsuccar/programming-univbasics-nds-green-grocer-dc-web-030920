@@ -75,6 +75,7 @@ def apply_coupons(cart, coupons)
         end
   i +=1
 end
+cart
 end
   #cart     [{:item=>"AVOCADO", :price=>3.0, :clearance=>true, :count=>2}]
   #coupons  [{:item=>"AVOCADO", :num=>2, :cost=>5.0}]
