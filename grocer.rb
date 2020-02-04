@@ -66,8 +66,9 @@ def apply_coupons(cart, coupons)
             cart_item_w_coupon = {
               :item => couponed_item_name,
               :price => coupons[i][:cost] / coupons[i][:num],
-              :clearance => true,
-              :count => coupons[i][:num]
+
+              :count => coupons[i][:num].
+              :clearance => cart_item[:clearance]
             }
             cart<<cart
           end
