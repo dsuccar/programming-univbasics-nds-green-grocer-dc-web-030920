@@ -91,7 +91,6 @@ def apply_clearance(cart)
   while i < cart.length
 if cart[i][:clearance] == true
   cart[i][:price] *= 8/10.to_f
-binding.pry
 end
 i += 1
   end
