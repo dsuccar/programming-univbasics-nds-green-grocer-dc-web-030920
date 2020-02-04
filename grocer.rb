@@ -109,8 +109,9 @@ def checkout(cart, coupons)
   apply_clearance(total_cart)
    while i < total_cart.length do
      total += total_cart[i]
+     binding.pry
      i += 1
-     pry
+     
    end
 
 
