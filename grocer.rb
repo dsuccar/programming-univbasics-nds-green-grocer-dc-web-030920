@@ -106,7 +106,7 @@ def checkout(cart, coupons)
    apply_coupons(cart, coupons)
    apply_clearance(cart)
 
-cart
+puts cart
 
 end
   # Consult README for inputs and outputs
