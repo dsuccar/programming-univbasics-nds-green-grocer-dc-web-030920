@@ -94,6 +94,7 @@ if cart[i][:clearance] == true
 end
 i += 1
 end
+end
 
 cart
   end
