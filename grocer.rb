@@ -112,10 +112,10 @@ def checkout(cart, coupons)
      total += total_cart[i][:price] * total_cart[i][:count]
      i += 1
    end
-
-
-
-
+   if total >= 100 do
+      total *= 9/10.to_f
+    end
+total
 end
   # Consult README for inputs and outputs
   #
