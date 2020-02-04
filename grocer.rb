@@ -90,7 +90,7 @@ def apply_clearance(cart)
   i = 0
   while i < cart.length
 if cart[i][:clearance] == true
-  cart[i][:price] *= (8/10).to_f
+  cart[i][:price] *= 8/10.to_f
 binding.pry
 end
 i += 1
